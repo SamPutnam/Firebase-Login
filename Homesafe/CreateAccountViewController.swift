@@ -49,7 +49,9 @@ class CreateAccountViewController: UIViewController {
                         if error == nil
                         {
                             NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: "uid")
+                            
                             print("Account Created")
+                            
                             self.dismissViewControllerAnimated(true, completion: nil)
                         }
                         else
