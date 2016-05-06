@@ -42,7 +42,6 @@ class CreateAccountViewController: UIViewController {
         {   //this time, this authData is not an object from Firebase it's actually a dictionary
             FIREBASE_REF.createUser(email, password: password, withValueCompletionBlock: { (error, result) -> Void in
             
-                
                 if error == nil
                 {   //this time, this authData is an object from Firebase and not just a dictionary
                     FIREBASE_REF.authUser(email, password: password, withCompletionBlock: { (error, authData) -> Void in
