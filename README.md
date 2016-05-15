@@ -9,5 +9,5 @@ For families who want to find one another.
 
 <img src="http://i.imgur.com/kb6geb5.gif" width="300">
 
-
+<img src="http://i.imgur.com/gwhgEQj.jpg" width = "800">
 
