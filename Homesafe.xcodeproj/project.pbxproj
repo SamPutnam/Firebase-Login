@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		4C04731158ACAC9BC1356D55 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5473114B712B1B89CAF1A0A /* Pods.framework */; };
 		A90CA6441CD063740027D8C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90CA6431CD063740027D8C3 /* AppDelegate.swift */; };
-		A90CA6491CD063740027D8C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90CA6471CD063740027D8C3 /* Main.storyboard */; };
 		A90CA64B1CD063740027D8C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90CA64A1CD063740027D8C3 /* Assets.xcassets */; };
 		A90CA64E1CD063740027D8C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90CA64C1CD063740027D8C3 /* LaunchScreen.storyboard */; };
 		A90CA6591CD063740027D8C3 /* HomesafeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90CA6581CD063740027D8C3 /* HomesafeTests.swift */; };
 		A90CA6641CD063740027D8C3 /* HomesafeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90CA6631CD063740027D8C3 /* HomesafeUITests.swift */; };
-		A91A4C891CEB6E3E00632798 /* CreateMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91A4C881CEB6E3E00632798 /* CreateMapController.swift */; };
+		A91A4C931CEBD05F00632798 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91A4C911CEBD05F00632798 /* Main.storyboard */; };
+		A91A4C971CEBD90300632798 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91A4C961CEBD90300632798 /* MapViewController.swift */; };
 		A94C0D3B1CDD427E00CE7AD3 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94C0D3A1CDD427E00CE7AD3 /* BaseService.swift */; };
 		A94C0D3D1CDD445D00CE7AD3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94C0D3C1CDD445D00CE7AD3 /* LoginViewController.swift */; };
 		A94C0D3F1CDD448B00CE7AD3 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94C0D3E1CDD448B00CE7AD3 /* CreateAccountViewController.swift */; };
@@ -42,7 +42,6 @@
 		4E9DB8DFA3D4C52668D7E196 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A90CA6401CD063740027D8C3 /* Homesafe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homesafe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A90CA6431CD063740027D8C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A90CA6481CD063740027D8C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A90CA64A1CD063740027D8C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A90CA64D1CD063740027D8C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A90CA64F1CD063740027D8C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,7 +51,8 @@
 		A90CA65F1CD063740027D8C3 /* HomesafeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomesafeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A90CA6631CD063740027D8C3 /* HomesafeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomesafeUITests.swift; sourceTree = "<group>"; };
 		A90CA6651CD063740027D8C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A91A4C881CEB6E3E00632798 /* CreateMapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateMapController.swift; sourceTree = "<group>"; };
+		A91A4C921CEBD05F00632798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A91A4C961CEBD90300632798 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A94C0D3A1CDD427E00CE7AD3 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		A94C0D3C1CDD445D00CE7AD3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A94C0D3E1CDD448B00CE7AD3 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
@@ -121,9 +121,9 @@
 				A90CA6431CD063740027D8C3 /* AppDelegate.swift */,
 				A94C0D3C1CDD445D00CE7AD3 /* LoginViewController.swift */,
 				A94C0D3E1CDD448B00CE7AD3 /* CreateAccountViewController.swift */,
+				A91A4C961CEBD90300632798 /* MapViewController.swift */,
 				A94C0D3A1CDD427E00CE7AD3 /* BaseService.swift */,
-				A91A4C881CEB6E3E00632798 /* CreateMapController.swift */,
-				A90CA6471CD063740027D8C3 /* Main.storyboard */,
+				A91A4C911CEBD05F00632798 /* Main.storyboard */,
 				A90CA64A1CD063740027D8C3 /* Assets.xcassets */,
 				A90CA64C1CD063740027D8C3 /* LaunchScreen.storyboard */,
 				A90CA64F1CD063740027D8C3 /* Info.plist */,
@@ -265,9 +265,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A91A4C931CEBD05F00632798 /* Main.storyboard in Resources */,
 				A90CA64E1CD063740027D8C3 /* LaunchScreen.storyboard in Resources */,
 				A90CA64B1CD063740027D8C3 /* Assets.xcassets in Resources */,
-				A90CA6491CD063740027D8C3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,10 +340,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A91A4C971CEBD90300632798 /* MapViewController.swift in Sources */,
 				A94C0D3F1CDD448B00CE7AD3 /* CreateAccountViewController.swift in Sources */,
 				A94C0D3D1CDD445D00CE7AD3 /* LoginViewController.swift in Sources */,
 				A90CA6441CD063740027D8C3 /* AppDelegate.swift in Sources */,
-				A91A4C891CEB6E3E00632798 /* CreateMapController.swift in Sources */,
 				A94C0D3B1CDD427E00CE7AD3 /* BaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,20 +380,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A90CA6471CD063740027D8C3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A90CA6481CD063740027D8C3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A90CA64C1CD063740027D8C3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A90CA64D1CD063740027D8C3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A91A4C911CEBD05F00632798 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A91A4C921CEBD05F00632798 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -487,6 +487,7 @@
 			baseConfigurationReference = 2E7D320F7E7408965AAC1926 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Homesafe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samuelputnam.Homesafe;
@@ -499,6 +500,7 @@
 			baseConfigurationReference = 4E9DB8DFA3D4C52668D7E196 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Homesafe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samuelputnam.Homesafe;

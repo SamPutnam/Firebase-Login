@@ -16,6 +16,7 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        emailTextField.becomeFirstResponder()
 
         // Do any additional setup after loading the view.
     }
@@ -29,7 +30,12 @@ class LoginViewController: UIViewController {
         if NSUserDefaults.standardUserDefaults().valueForKey("uid") != nil && CURRENT_USER.authData != nil
         {
             self.logoutButton.hidden = false
+            
         }
+        else {
+            self.logoutButton.hidden = true
+        }
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -52,29 +58,37 @@ class LoginViewController: UIViewController {
         let password = self.passwordTextField.text
         
         if email != "" && password != ""
-        {           //call authUser method to authenticate the user which returns an error and authData object
+        {   //call authUser method to authenticate the user which returns an error and authData object
+            
             FIREBASE_REF.authUser(email, password: password, withCompletionBlock: { (error, authData) -> Void in
                 
                 if error == nil
-                {                                           //save users unique identifier in our NSUSerDefaults
+                {   //save users unique identifier in our NSUSerDefaults
                     NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: "uid")
-                    
                     print("Logged In")
-                    //set logout button hidden to false, so that it is visible and the user can log out
+                    //set logout button hidden to false, so that it is visible and user could log out
                     self.logoutButton.hidden = false
+                    print("here")
                     self.performSegueWithIdentifier("showNew", sender: self)
                 }
                 else
                 {
-                    //there is an error
+                    print("there is an error")
                     print(error)
+                    let alert = UIAlertController(title: "Error", message: "Enter Email and Password",  preferredStyle: .Alert)
+                    
+                    let action = UIAlertAction(title: "OK", style: .Default, handler: nil)
+                    
+                    alert.addAction(action)
+                    
+                    self.presentViewController(alert, animated: true, completion: nil)
                 }
-        })
+            })
         
-    }
+        }
         else
         {
-            let alert = UIAlertController(title: "Error", message: "Enter Email and Password,",  preferredStyle: .Alert)
+            let alert = UIAlertController(title: "Error", message: "Enter Email and Password",  preferredStyle: .Alert)
             
             let action = UIAlertAction(title: "OK", style: .Default, handler: nil)
             
