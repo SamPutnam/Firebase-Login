@@ -62,6 +62,7 @@ class LoginViewController: UIViewController {
                     print("Logged In")
                     //set logout button hidden to false, so that it is visible and the user can log out
                     self.logoutButton.hidden = false
+                    self.performSegueWithIdentifier("showNew", sender: self)
                 }
                 else
                 {

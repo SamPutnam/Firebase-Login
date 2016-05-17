@@ -14,6 +14,7 @@
 		A90CA64E1CD063740027D8C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90CA64C1CD063740027D8C3 /* LaunchScreen.storyboard */; };
 		A90CA6591CD063740027D8C3 /* HomesafeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90CA6581CD063740027D8C3 /* HomesafeTests.swift */; };
 		A90CA6641CD063740027D8C3 /* HomesafeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90CA6631CD063740027D8C3 /* HomesafeUITests.swift */; };
+		A91A4C891CEB6E3E00632798 /* CreateMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91A4C881CEB6E3E00632798 /* CreateMapController.swift */; };
 		A94C0D3B1CDD427E00CE7AD3 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94C0D3A1CDD427E00CE7AD3 /* BaseService.swift */; };
 		A94C0D3D1CDD445D00CE7AD3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94C0D3C1CDD445D00CE7AD3 /* LoginViewController.swift */; };
 		A94C0D3F1CDD448B00CE7AD3 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94C0D3E1CDD448B00CE7AD3 /* CreateAccountViewController.swift */; };
@@ -51,6 +52,7 @@
 		A90CA65F1CD063740027D8C3 /* HomesafeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomesafeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A90CA6631CD063740027D8C3 /* HomesafeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomesafeUITests.swift; sourceTree = "<group>"; };
 		A90CA6651CD063740027D8C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A91A4C881CEB6E3E00632798 /* CreateMapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateMapController.swift; sourceTree = "<group>"; };
 		A94C0D3A1CDD427E00CE7AD3 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		A94C0D3C1CDD445D00CE7AD3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A94C0D3E1CDD448B00CE7AD3 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				A94C0D3C1CDD445D00CE7AD3 /* LoginViewController.swift */,
 				A94C0D3E1CDD448B00CE7AD3 /* CreateAccountViewController.swift */,
 				A94C0D3A1CDD427E00CE7AD3 /* BaseService.swift */,
+				A91A4C881CEB6E3E00632798 /* CreateMapController.swift */,
 				A90CA6471CD063740027D8C3 /* Main.storyboard */,
 				A90CA64A1CD063740027D8C3 /* Assets.xcassets */,
 				A90CA64C1CD063740027D8C3 /* LaunchScreen.storyboard */,
@@ -340,6 +343,7 @@
 				A94C0D3F1CDD448B00CE7AD3 /* CreateAccountViewController.swift in Sources */,
 				A94C0D3D1CDD445D00CE7AD3 /* LoginViewController.swift in Sources */,
 				A90CA6441CD063740027D8C3 /* AppDelegate.swift in Sources */,
+				A91A4C891CEB6E3E00632798 /* CreateMapController.swift in Sources */,
 				A94C0D3B1CDD427E00CE7AD3 /* BaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
