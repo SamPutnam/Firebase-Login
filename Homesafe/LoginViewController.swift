@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import FBSDKLoginKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -19,10 +21,42 @@ class LoginViewController: UIViewController {
         emailTextField.becomeFirstResponder()
 
         // Do any additional setup after loading the view.
+        if (FBSDKAccessToken.currentAccessToken() == nil)
+        {
+            print("Not Logged In Using Facebook ")
+        }
+        else {
+            print("Logged In Using Facebook")
+        }
         
+        var loginButton = FBSDKLoginButton()
+        loginButton.readPermissions = ["public_profile", "email", "user_friends"]
+        loginButton.center = self.view.center
+        
+        loginButton.delegate = self
+        
+        self.view.addSubview(loginButton)
     }
 
+    // MARK - Facebook Login
     
+    func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
+        
+        if error == nil {
+            print("Login Using Facebook Complete")
+            self.performSegueWithIdentifier("showNew", sender: self)
+        }
+        
+        else
+        {
+            print(error.localizedDescription)
+        }
+    
+    }
+    
+    func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
+        print ("User Logged Out Using Facebook")
+    }
     
     override func viewDidAppear(animated: Bool)
     {

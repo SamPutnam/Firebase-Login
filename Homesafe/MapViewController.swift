@@ -21,14 +21,8 @@ class MapViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-        @IBAction func appLogoutAction(sender: AnyObject) {
-            
-            
-            //unauthenticate our user from our Firebase instance
-            CURRENT_USER.unauth()
-            //set the uid we previously used to authorize the user to nil, because there's no longer a user logged in.
-            NSUserDefaults.standardUserDefaults().setValue(nil, forKey: "uid")
-            self.dismissViewControllerAnimated(true, completion: nil)
+        @IBAction func SwitchUser(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
 
             
         }
