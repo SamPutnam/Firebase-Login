@@ -16,7 +16,10 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var logoutButton: UIButton!
     
- 
+    struct LoggedIn {
+    static var LoggedInUsingFacebook = false
+    static var LoggedInUsingFirebase = false
+    }
     @IBAction func userTappedBackground(sender: AnyObject) {
         view.endEditing(true)
     }
@@ -32,6 +35,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         }
         else {
             print("Logged In Using Facebook")
+            self.performSegueWithIdentifier("showNew", sender: self)
         }
         
         var loginButton = FBSDKLoginButton()
@@ -49,7 +53,8 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         
         if error == nil {
             print("Login Using Facebook Complete")
-            self.performSegueWithIdentifier("showNew", sender: self)
+            LoggedIn.LoggedInUsingFacebook = true
+            
         }
         
         else
@@ -105,10 +110,10 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
                 if error == nil
                 {   //save users unique identifier in our NSUSerDefaults
                     NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: "uid")
-                    print("Logged In")
+                    print("Logged In Using Firebase")
+                    LoggedIn.LoggedInUsingFirebase = true
                     //set logout button hidden to false, so that it is visible and user could log out
                     self.logoutButton.hidden = false
-                    print("here")
                     self.performSegueWithIdentifier("showNew", sender: self)
                 }
                 else
