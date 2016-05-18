@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MapViewController.swift
 //  Homesafe
 //
 //  Created by Samuel Putnam on 5/17/16.
@@ -21,9 +21,7 @@ class MapViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-        @IBAction func SwitchUser(sender: AnyObject) {
+    @IBAction func SwitchAccount(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
-
-            
-        }
     }
+         }
