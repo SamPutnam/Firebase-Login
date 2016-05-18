@@ -16,6 +16,11 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var logoutButton: UIButton!
     
+ 
+    @IBAction func userTappedBackground(sender: AnyObject) {
+        view.endEditing(true)
+    }
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         emailTextField.becomeFirstResponder()
