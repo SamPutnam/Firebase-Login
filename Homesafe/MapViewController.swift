@@ -9,9 +9,6 @@
 import UIKit
 import MapKit
 import CoreLocation
-//The ---MKMapViewDelegate--- protocol defines a set of optional methods that you can use to receive map-related update messages. Because many map operations require the MKMapView class to load data asynchronously, the map view calls these methods to notify your application when specific operations complete. The map view also uses these methods to request annotation and overlay views and to manage interactions with those views.Before releasing an MKMapView object for which you have set a delegate, remember to set that object’s delegate property to nil.
-
-//The ---CLLocationManagerDelegate--- protocol defines the methods used to receive location and heading updates from a CLLocationManager object. Upon receiving a successful location or heading update, you can use the result to update your user interface or perform other actions. If the location or heading could not be determined, you might want to stop updates for a short period of time and try again later. You can use the stopUpdatingLocation, stopMonitoringSignificantLocationChanges, stopUpdatingHeading, stopMonitoringForRegion:, or stopMonitoringVisits methods of CLLocationManager to stop the various location services.The methods of your delegate object are called from the thread in which you started the corresponding location services. That thread must itself have an active run loop, like the one found in your application’s main thread.
 
 //need ViewController to conform to these two delegates (the protocol)
 
@@ -30,8 +27,7 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
     }
     
 
-    
-    //The CLLocationManager class is the central point for configuring the delivery of location- and heading-related events to your app. You use an instance of this class to establish the parameters that determine when location and heading events should be delivered and to start and stop the actual delivery of those events. You can also use a location manager object to retrieve the most recent location and heading data.
+
     //create a locationManager property
     let locationManager = CLLocationManager()
     override func viewDidLoad() {
@@ -69,9 +65,6 @@ class MapViewController: UIViewController, MKMapViewDelegate, CLLocationManagerD
         self.locationManager.stopUpdatingLocation()
     }
     
-    
-    
-    //Tells the delegate that the location manager was unable to retrieve a location value. Implementation of this method is optional but recommended.The location manager calls this method when it encounters an error trying to get the location or heading data. If the location service is unable to retrieve a location right away, it reports a kCLErrorLocationUnknown error and keeps trying. In such a situation, you can simply ignore the error and wait for a new event. If a heading could not be determined because of strong interference from nearby magnetic fields, this method returns kCLErrorHeadingFailure.If the user denies your application’s use of the location service, this method reports a kCLErrorDenied error. Upon receiving such an error, you should stop the location service.
     
     //manager is the location manager object that was unable to retrieve the location; error is the error object containing the reason the location or heading could not be retrieved.
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {

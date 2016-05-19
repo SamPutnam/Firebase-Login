@@ -1,11 +1,42 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Oag-Qx-9X1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mNL-oB-Bav">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Initial Segue Controller-->
+        <scene sceneID="GuZ-od-kfq">
+            <objects>
+                <viewController id="mNL-oB-Bav" customClass="InitialSegueController" customModule="Homesafe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hhK-ie-rPX"/>
+                        <viewControllerLayoutGuide type="bottom" id="6OO-lT-9ZX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5eY-nX-sSs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="cKZ-ud-umX">
+                                <rect key="frame" x="290" y="290" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cKZ-ud-umX" firstAttribute="centerY" secondItem="5eY-nX-sSs" secondAttribute="centerY" id="Qds-N5-uNj"/>
+                            <constraint firstItem="cKZ-ud-umX" firstAttribute="centerX" secondItem="5eY-nX-sSs" secondAttribute="centerX" id="oSE-FO-ejn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="zQ2-lt-7oO" kind="presentation" identifier="LoggedIn" id="izR-Js-HQy"/>
+                        <segue destination="Oag-Qx-9X1" kind="presentation" identifier="NotLoggedIn" id="rfW-pp-LvC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ATJ-cz-PyK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-755" y="142"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="i7P-EX-03P">
             <objects>
@@ -95,10 +126,10 @@
             </objects>
             <point key="canvasLocation" x="-38" y="142"/>
         </scene>
-        <!--Create Map Controller-->
+        <!--Map View Controller-->
         <scene sceneID="Tkb-PN-DXu">
             <objects>
-                <viewController id="zQ2-lt-7oO" customClass="CreateMapController" customModule="Homesafe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zQ2-lt-7oO" customClass="MapViewController" customModule="Homesafe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Qkv-46-1iV"/>
                         <viewControllerLayoutGuide type="bottom" id="IzP-Td-hkL"/>
@@ -108,9 +139,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzf-LW-BrT">
-                                <rect key="frame" x="19" y="20" width="48" height="30"/>
-                                <state key="normal" title="Logout"/>
+                                <rect key="frame" x="20" y="20" width="107" height="30"/>
+                                <state key="normal" title="Switch Account"/>
                                 <connections>
+                                    <action selector="SwitchAccount:" destination="zQ2-lt-7oO" eventType="touchUpInside" id="kbP-YH-xub"/>
                                     <action selector="logoutAction:" destination="zQ2-lt-7oO" eventType="touchUpInside" id="TOj-Yz-7OX"/>
                                 </connections>
                             </button>
@@ -198,4 +230,7 @@
             <point key="canvasLocation" x="689" y="142"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="izR-Js-HQy"/>
+    </inferredMetricsTieBreakers>
 </document>
