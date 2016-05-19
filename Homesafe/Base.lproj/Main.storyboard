@@ -46,7 +46,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JlA-RY-7CM">
-                                <rect key="frame" x="216" y="265" width="168" height="30"/>
+                                <rect key="frame" x="216" y="260" width="168" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="168" id="IdV-8B-Rio"/>
                                 </constraints>
@@ -79,7 +79,7 @@
                             <constraint firstItem="JlA-RY-7CM" firstAttribute="centerX" secondItem="GRc-bm-Vm4" secondAttribute="centerX" id="dVv-ps-KGn"/>
                             <constraint firstItem="YtW-bo-dXp" firstAttribute="leading" secondItem="yYb-4U-h2M" secondAttribute="leading" id="ekp-fw-6VT"/>
                             <constraint firstItem="Y1f-p3-FiP" firstAttribute="centerX" secondItem="GRc-bm-Vm4" secondAttribute="centerX" id="ezM-nG-9tx"/>
-                            <constraint firstItem="JlA-RY-7CM" firstAttribute="top" secondItem="Y1f-p3-FiP" secondAttribute="bottom" constant="30" id="ltL-40-nAG"/>
+                            <constraint firstItem="JlA-RY-7CM" firstAttribute="top" secondItem="Y1f-p3-FiP" secondAttribute="bottom" constant="25" id="ltL-40-nAG"/>
                             <constraint firstItem="yYb-4U-h2M" firstAttribute="top" secondItem="YtW-bo-dXp" secondAttribute="bottom" constant="8" symbolic="YES" id="ngV-O8-FxW"/>
                             <constraint firstItem="YtW-bo-dXp" firstAttribute="top" secondItem="kra-MG-wyL" secondAttribute="bottom" constant="80" id="raC-TN-H1i"/>
                             <constraint firstItem="yYb-4U-h2M" firstAttribute="trailing" secondItem="ktV-eJ-iwN" secondAttribute="trailing" id="zJc-UJ-8He"/>
