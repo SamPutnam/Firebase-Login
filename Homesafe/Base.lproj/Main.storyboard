@@ -35,7 +35,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1f-p3-FiP">
-                                <rect key="frame" x="278" y="205" width="46" height="30"/>
+                                <rect key="frame" x="277" y="205" width="46" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="o9X-j0-uXI"/>
                                 </constraints>
@@ -46,7 +46,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JlA-RY-7CM">
-                                <rect key="frame" x="217" y="285" width="168" height="30"/>
+                                <rect key="frame" x="216" y="265" width="168" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="168" id="IdV-8B-Rio"/>
                                 </constraints>
@@ -68,7 +68,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="JlA-RY-7CM" firstAttribute="centerY" secondItem="GRc-bm-Vm4" secondAttribute="centerY" id="2gJ-59-LR4"/>
                             <constraint firstItem="YtW-bo-dXp" firstAttribute="trailing" secondItem="GRc-bm-Vm4" secondAttribute="trailingMargin" id="3Im-Mk-w4m"/>
                             <constraint firstItem="ktV-eJ-iwN" firstAttribute="centerX" secondItem="sLj-Sk-nfF" secondAttribute="centerX" id="7PM-dJ-bEB"/>
                             <constraint firstItem="ktV-eJ-iwN" firstAttribute="top" secondItem="yYb-4U-h2M" secondAttribute="bottom" constant="8" symbolic="YES" id="CSQ-Zu-Ytz"/>
@@ -77,11 +76,12 @@
                             <constraint firstItem="yYb-4U-h2M" firstAttribute="leading" secondItem="ktV-eJ-iwN" secondAttribute="leading" id="NKV-Xo-ygi"/>
                             <constraint firstItem="YtW-bo-dXp" firstAttribute="trailing" secondItem="yYb-4U-h2M" secondAttribute="trailing" id="Ose-Mu-owe"/>
                             <constraint firstItem="Y1f-p3-FiP" firstAttribute="top" secondItem="ktV-eJ-iwN" secondAttribute="bottom" constant="8" symbolic="YES" id="UhQ-wf-5qp"/>
-                            <constraint firstItem="JlA-RY-7CM" firstAttribute="leading" secondItem="GRc-bm-Vm4" secondAttribute="leading" constant="217" id="aMb-fc-WUf"/>
+                            <constraint firstItem="JlA-RY-7CM" firstAttribute="centerX" secondItem="GRc-bm-Vm4" secondAttribute="centerX" id="dVv-ps-KGn"/>
                             <constraint firstItem="YtW-bo-dXp" firstAttribute="leading" secondItem="yYb-4U-h2M" secondAttribute="leading" id="ekp-fw-6VT"/>
-                            <constraint firstItem="JlA-RY-7CM" firstAttribute="top" secondItem="Y1f-p3-FiP" secondAttribute="bottom" constant="50" id="ltL-40-nAG"/>
+                            <constraint firstItem="Y1f-p3-FiP" firstAttribute="centerX" secondItem="GRc-bm-Vm4" secondAttribute="centerX" id="ezM-nG-9tx"/>
+                            <constraint firstItem="JlA-RY-7CM" firstAttribute="top" secondItem="Y1f-p3-FiP" secondAttribute="bottom" constant="30" id="ltL-40-nAG"/>
                             <constraint firstItem="yYb-4U-h2M" firstAttribute="top" secondItem="YtW-bo-dXp" secondAttribute="bottom" constant="8" symbolic="YES" id="ngV-O8-FxW"/>
-                            <constraint firstItem="Y1f-p3-FiP" firstAttribute="centerX" secondItem="JlA-RY-7CM" secondAttribute="centerX" id="p1f-zB-dAY"/>
+                            <constraint firstItem="YtW-bo-dXp" firstAttribute="top" secondItem="kra-MG-wyL" secondAttribute="bottom" constant="80" id="raC-TN-H1i"/>
                             <constraint firstItem="yYb-4U-h2M" firstAttribute="trailing" secondItem="ktV-eJ-iwN" secondAttribute="trailing" id="zJc-UJ-8He"/>
                         </constraints>
                     </view>
