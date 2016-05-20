@@ -45,7 +45,7 @@
                         <viewControllerLayoutGuide type="top" id="kra-MG-wyL"/>
                         <viewControllerLayoutGuide type="bottom" id="YG5-xs-1ls"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="GRc-bm-Vm4">
+                    <view key="view" contentMode="scaleToFill" id="GRc-bm-Vm4" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -73,7 +73,6 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="loginAction:" destination="Oag-Qx-9X1" eventType="touchUpInside" id="7U8-tg-bxF"/>
-                                    <segue destination="zQ2-lt-7oO" kind="presentation" identifier="showNew" id="WBR-je-K8r"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JlA-RY-7CM">
@@ -115,10 +114,13 @@
                             <constraint firstItem="YtW-bo-dXp" firstAttribute="top" secondItem="kra-MG-wyL" secondAttribute="bottom" constant="80" id="raC-TN-H1i"/>
                             <constraint firstItem="yYb-4U-h2M" firstAttribute="trailing" secondItem="ktV-eJ-iwN" secondAttribute="trailing" id="zJc-UJ-8He"/>
                         </constraints>
+                        <connections>
+                            <action selector="userTappedBackground:" destination="Oag-Qx-9X1" eventType="touchDown" id="C5K-XY-NGv"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="yYb-4U-h2M" id="9og-Rc-74a"/>
-                        <outlet property="logoutButton" destination="sLj-Sk-nfF" id="edI-qI-Yu2"/>
+                        <outlet property="logoutButton" destination="sLj-Sk-nfF" id="VuO-Jr-85y"/>
                         <outlet property="passwordTextField" destination="ktV-eJ-iwN" id="7R8-vc-qw4"/>
                     </connections>
                 </viewController>
@@ -138,17 +140,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mKJ-DV-ijq">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzf-LW-BrT">
                                 <rect key="frame" x="20" y="20" width="107" height="30"/>
                                 <state key="normal" title="Switch Account"/>
                                 <connections>
-                                    <action selector="SwitchAccount:" destination="zQ2-lt-7oO" eventType="touchUpInside" id="kbP-YH-xub"/>
-                                    <action selector="logoutAction:" destination="zQ2-lt-7oO" eventType="touchUpInside" id="TOj-Yz-7OX"/>
+                                    <action selector="SwitchAccount:" destination="zQ2-lt-7oO" eventType="touchUpInside" id="Qkx-14-IP5"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IzP-Td-hkL" firstAttribute="top" secondItem="mKJ-DV-ijq" secondAttribute="bottom" id="7I8-01-gYx"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="mKJ-DV-ijq" id="5QQ-iE-Qgj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sec-vs-2o0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -189,7 +199,7 @@
                                 </constraints>
                                 <state key="normal" title="Create Account"/>
                                 <connections>
-                                    <action selector="createAccountAction:" destination="qkW-MY-tNh" eventType="touchUpInside" id="cB5-p7-MHa"/>
+                                    <action selector="createAccountAction:" destination="qkW-MY-tNh" eventType="touchUpInside" id="wAs-H5-K8E"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSE-S5-l5K">
@@ -199,7 +209,7 @@
                                 </constraints>
                                 <state key="normal" title="Cancel"/>
                                 <connections>
-                                    <action selector="cancelAction:" destination="qkW-MY-tNh" eventType="touchUpInside" id="vXW-aS-ZEz"/>
+                                    <action selector="cancelAction:" destination="qkW-MY-tNh" eventType="touchUpInside" id="2Az-JE-gpu"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -230,7 +240,4 @@
             <point key="canvasLocation" x="689" y="142"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="izR-Js-HQy"/>
-    </inferredMetricsTieBreakers>
 </document>

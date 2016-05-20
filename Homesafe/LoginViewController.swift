@@ -14,8 +14,8 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var logoutButton: UIButton!
     
+    @IBOutlet weak var logoutButton: UIButton!
     struct LoggedIn {
     static var LoggedInUsingFacebook = false
     static var LoggedInUsingFirebase = false

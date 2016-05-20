@@ -16,16 +16,15 @@
 		A91A4C931CEBD05F00632798 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A91A4C911CEBD05F00632798 /* Main.storyboard */; };
 		A91A4C971CEBD90300632798 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91A4C961CEBD90300632798 /* MapViewController.swift */; };
 		A91A4CA51CED16E100632798 /* InitialSegueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A91A4CA41CED16E100632798 /* InitialSegueController.swift */; };
-		A91A4CA71CEE4CD200632798 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91A4CA61CEE4CD200632798 /* Firebase.framework */; };
 		A91A4CA91CEE4D1500632798 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A91A4CA81CEE4D1500632798 /* libicucore.tbd */; };
 		A91A4CAB1CEE4D2800632798 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = A91A4CAA1CEE4D2800632798 /* libc++.tbd */; };
 		A91A4CAD1CEE4D3700632798 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91A4CAC1CEE4D3700632798 /* CFNetwork.framework */; };
 		A91A4CAF1CEE4D4200632798 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91A4CAE1CEE4D4200632798 /* Security.framework */; };
 		A91A4CB11CEE4D4B00632798 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91A4CB01CEE4D4B00632798 /* SystemConfiguration.framework */; };
-		A91A4CB31CEE4E6E00632798 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A91A4CB21CEE4E6E00632798 /* Firebase.framework */; };
 		A94C0D3B1CDD427E00CE7AD3 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94C0D3A1CDD427E00CE7AD3 /* BaseService.swift */; };
 		A94C0D3D1CDD445D00CE7AD3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94C0D3C1CDD445D00CE7AD3 /* LoginViewController.swift */; };
 		A94C0D3F1CDD448B00CE7AD3 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94C0D3E1CDD448B00CE7AD3 /* CreateAccountViewController.swift */; };
+		A9D0C3F41CEF52D1005B7502 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9D0C3F31CEF52D1005B7502 /* Firebase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,16 +61,15 @@
 		A91A4C921CEBD05F00632798 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A91A4C961CEBD90300632798 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A91A4CA41CED16E100632798 /* InitialSegueController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialSegueController.swift; sourceTree = "<group>"; };
-		A91A4CA61CEE4CD200632798 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = ../../Downloads/Firebase.framework; sourceTree = "<group>"; };
 		A91A4CA81CEE4D1500632798 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
 		A91A4CAA1CEE4D2800632798 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		A91A4CAC1CEE4D3700632798 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		A91A4CAE1CEE4D4200632798 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		A91A4CB01CEE4D4B00632798 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		A91A4CB21CEE4E6E00632798 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebase.framework; path = ../../Downloads/Firebase.framework; sourceTree = "<group>"; };
 		A94C0D3A1CDD427E00CE7AD3 /* BaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
 		A94C0D3C1CDD445D00CE7AD3 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A94C0D3E1CDD448B00CE7AD3 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		A9D0C3F31CEF52D1005B7502 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		B5473114B712B1B89CAF1A0A /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -81,13 +79,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A91A4CB11CEE4D4B00632798 /* SystemConfiguration.framework in Frameworks */,
+				A9D0C3F41CEF52D1005B7502 /* Firebase.framework in Frameworks */,
 				A91A4CAF1CEE4D4200632798 /* Security.framework in Frameworks */,
 				A91A4CAD1CEE4D3700632798 /* CFNetwork.framework in Frameworks */,
 				A91A4CAB1CEE4D2800632798 /* libc++.tbd in Frameworks */,
 				A91A4CA91CEE4D1500632798 /* libicucore.tbd in Frameworks */,
 				4C04731158ACAC9BC1356D55 /* Pods.framework in Frameworks */,
-				A91A4CA71CEE4CD200632798 /* Firebase.framework in Frameworks */,
-				A91A4CB31CEE4E6E00632798 /* Firebase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,8 +108,7 @@
 		324813B6984DD0FB4F6963CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A91A4CB21CEE4E6E00632798 /* Firebase.framework */,
-				A91A4CA61CEE4CD200632798 /* Firebase.framework */,
+				A9D0C3F31CEF52D1005B7502 /* Firebase.framework */,
 				A91A4CB01CEE4D4B00632798 /* SystemConfiguration.framework */,
 				A91A4CAE1CEE4D4200632798 /* Security.framework */,
 				A91A4CAC1CEE4D3700632798 /* CFNetwork.framework */,
@@ -520,7 +516,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = /Users/samuelputnam/Documents/de/copies/sdks/FacebookSDK;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/samuelputnam/Documents/sdks/FacebookSDK,
+					/Users/samuelputnam/Documents/sdks/Firebase,
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Homesafe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samuelputnam.Homesafe;
@@ -534,7 +534,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = /Users/samuelputnam/Documents/de/copies/sdks/FacebookSDK;
+				FRAMEWORK_SEARCH_PATHS = (
+					/Users/samuelputnam/Documents/sdks/FacebookSDK,
+					/Users/samuelputnam/Documents/sdks/Firebase,
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Homesafe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samuelputnam.Homesafe;
