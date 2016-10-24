@@ -1,5 +1,5 @@
 #Homesafe
-For families who want to find one another.
+For families who want to find one another. The app is worthless but the login is useful.
 
 ![Home](http://i.imgur.com/W5D4iZM.png)
 
